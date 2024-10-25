@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1000px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-section h1 {
+    color: #1877F2;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.left-section p {
+    font-size: 24px;
+    color: #606770;
+    margin-top: 20px;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-box button {
+    background-color: #1877F2; /* Blue color for the login button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.login-box button:hover {
+    background-color: #165cdb; /* Darker blue for hover */
+}
+
+.forgot-password {
+    text-align: center;
+    font-size: 14px;
+    color: #1877F2;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.create-account {
+    background-color: #42b72a; /* Green color for the create account button */
+    color: white;
+    padding: 12px; /* Same padding as the Login button */
+    border: none;
+    border-radius: 6px; /* Same border radius as the Login button */
+    cursor: pointer;
+    font-size: 16px; /* Same font size as the Login button */
+    width: 100%; /* Make it full width if you want it to match the size */
+}
+
+.create-account:hover {
+    background-color: #36a420; /* Darker green for hover */
+}
+
+.create button {
+    background-color: #42b72a; /* Green color for the create account button */
+    color: white;
+    padding: 12px;
+    border: 20px;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.create button:hover {
+    background-color: #36a420; /* Darker green for hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        text-align: center;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+}
